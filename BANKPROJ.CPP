@@ -2,13 +2,12 @@
 #include<conio.h>
 #include<graphics.h>
 #include<stdio.h>
-#include<dos.h>
 #include<stdlib.h>
 #include<string.h>
 struct msgarr
-{
+      {
 	char arr[9][30];
-};
+      };
 char mm[2][30],inp_amt[10]="",descr[20]="";
 struct user_det
 {
@@ -68,7 +67,7 @@ void main()
 	}
 MAIN_WINDOW :
 {
-			// main window label start
+    // main window label start
 	cleardevice();
 	win_main(cur_on);
 	while(1)
@@ -137,7 +136,7 @@ MAIN_WINDOW :
 
 CRE_NEW_AC:
 {
-						// create new account  window label start
+  // create new account  window label start
 	for(i=0;i<9;i++)
 	{
 		strcpy(msg[i],"");
@@ -1576,7 +1575,7 @@ void update(int cur,char msg[9][30])
 	outtextxy(290,240,msg[4]);
 
 	line(10,270,629,270);
-	outtextxy(20,280,"6. MOBILE NO. ");
+	outtextxy(20,280,"6. MOBILE NUMBER ");
 	outtextxy(290,280,msg[5]);
 
 	line(10,310,629,310);
@@ -1591,8 +1590,8 @@ void update(int cur,char msg[9][30])
 	bar(10,350,629,469);
 	line(10,410,629,410);
 
-	outtextxy(50,360,"SUBMIT                     Ctrl+S");
-	outtextxy(50,420,"CANCEL                     Ctrl+C");
+	outtextxy(50,360,"SUBMIT Ctrl+S");
+	outtextxy(50,420,"CANCEL Ctrl+C");
 	settextstyle(1, HORIZ_DIR, 2);
 
 	if(cur==1)
